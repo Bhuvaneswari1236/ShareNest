@@ -1,0 +1,70 @@
+Creating a Flow to Record Venue Details
+Follow these steps to create a flow that allows users to input details and create a record in the Venue object:
+Access Flow Builder:
+Go to Setup in Salesforce.
+Type Flow in the Quick Find box and select Flows.
+Click on New Flow and choose Screen Flow. Click Create.
+Add Screen Element:
+Click the ‘+’ icon between the Start and End elements, and select Screen.
+Set the Screen Properties:
+Label: Venue Details
+API Name: Venue_Details
+Add Components to the Screen:
+Venue Name:
+Click on Text Component.
+Label: Venue Name
+API Name: Venue_Name
+Contact Email:
+Click on Email Component.
+Label: Email
+API Name: Contact_Email
+Contact Phone:
+Click on Phone Component.
+Label: Phone
+API Name: Contact_Phone
+Venue Location:
+Click on Text Component.
+Label: Venue Location
+API Name: Venue_Location
+Latitude:
+Click on Number Component.
+Label: Latitude
+API Name: Latitude
+Longitude:
+Click on Number Component.
+Label: Longitude
+API Name: Longitude
+Complete the Screen Element:
+Click on Done after adding all components.
+Add Create Record Element:
+Click the ‘+’ icon between the Venue Details screen and the End element.
+Select Create Record.
+Set the properties:
+Label: Create Venue Record
+API Name: Create_Venue_Record
+How Many Records to Create: One
+How to Set the Record Fields: Use separate resources, and literal values
+Object: Venue
+Set Field Values for Venue Record:
+Click on Add Field five times to set the following fields:
+Field: Contact_Email__c
+Value:{!Contact_Email.value}
+Field: Contact_Phone__c
+Value:{!Contact_Phone.value}
+Field: Name
+Value:{!Venue_Name}
+Field: Location__Latitude__s
+Value:{!Latitude}
+Field: Location__Longitude__s
+Value:{!Longitude}
+Field: Status__c
+Value:{!Status}
+
+Save Flow with Details:
+Flow Label: Type Venue Form for Food and Clothing Donation
+Flow API Name: Type Venue_Form_For_Food_and_Clothing_Donation
+Complete Save Process:
+Click Save after entering these labels.
+Activate the Flow:
+After saving, click Activate to make the flow available for users.
+

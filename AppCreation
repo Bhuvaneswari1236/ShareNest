@@ -1,0 +1,30 @@
+//Access App Manager:
+Go to Setup.
+Search for App Manager in the Quick Find bar and select it.
+Click on New Lightning App.
+App Details and Branding:
+App Name: Enter ShareNest.
+Developer Name: This will auto-populate.
+Image: Optional (add an image if desired; otherwise, leave blank).
+Primary Color Hex Value: Keep the default value.
+Set Navigation Style:
+Click Next.
+On the App Options page, set Navigation Style to Standard Navigation.
+Click Next.
+Utility Items:
+Keep the utility items as default and click Next.
+Add Navigation Items:
+Search for the following items in the search bar:
+Home
+Venue
+Drop-Off Point
+Task
+Volunteer
+Execution Details
+Reports
+Move the selected items using the arrow button.
+Click Next.
+Add User Profiles:
+Search for System Administrator in the search bar.
+Click on the arrow button to add it.
+Click Save & Finish.

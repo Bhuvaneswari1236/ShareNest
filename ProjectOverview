@@ -1,0 +1,29 @@
+Objective: Outline the project's main goals, such as:
+Building a system that manages food and clothing donations efficiently.
+Offering tools for tracking donations, venues, drop-off points, and volunteer coordination.
+Generating insights through reports and dashboards for effective decision-making.
+-----------------------------------------------------------------------------------------------
+Features and Functionalities of ShareNest
+
+1.User-Friendly Interface
+Custom Object Setup: Includes Food Donations, Clothing Donations, Venues, Drop-Off Points, and Volunteer,task,execution details objects to categorize and manage donation-related records.
+Field Customization: Specific fields for each object (e.g., Quantity, Size, Condition) ensure relevant data capture for food and clothing donations.
+Automation with Flows
+2.Venue Form Flow: Automates the creation of venue records for both food and clothing donations, reducing manual entry and speeding up the donation management process.
+Donation Tracking and Management
+Food and Clothing Donations Records: Tracks individual donations, including attributes like condition, type, pickup location, and quantity.
+3.Drop-Off Point Management: Geolocation-enabled drop-off points track available items, capacity, and acceptable donation types (e.g., food or clothing).
+4.Volunteer Management: Links volunteers to specific donation tasks based on proximity and availability, enhancing coordination.
+5.Reporting Capabilities
+Custom Reports: Generates reports on:
+Food and clothing donation tables.
+Volunteer tasks and assignments.
+Venue-specific donation data.
+Drop-off point metrics (e.g., capacity and distance).
+Geolocation and Distance Calculation
+6.Location Tracking: Uses geolocation fields for pickup and drop-off locations, which helps visualize donation flows and improve logistical planning.
+Distance-Based Sharing Rules: Configures sharing rules based on distance criteria, allowing donations to be assigned to nearby volunteers and organizations for quick and efficient distribution.
+7.Security and Access Control
+8.Public Group Sharing: Configures sharing with public groups like “Iksha,” “NSS,” based on distance to maximize the reach and efficiency of donations.
+
+------------------------------------------------------------------------------------------------------

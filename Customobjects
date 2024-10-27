@@ -1,0 +1,30 @@
+1.Clothing Donations
+Purpose: To record details on clothing donations, including clothing type, size, condition, and quantity.
+Key Fields: Type of Clothes, Size, Condition, Pickup Location.
+Relationships: Connected to Venues and Drop-Off Points to coordinate distribution efforts.
+--------------------------------------------------------------------------------------------------
+2.Food Donations
+Purpose: To manage all data related to food donations, including donor information, food specifics, and quantity.
+Key Fields: Food Type, Quantity, Pickup Location, Expiry Date,Donation Status,food donation name,Quantity,venue,task.
+Relationships: Linked to Venue and Drop-Off Points and task for tracking where each donation is stored or distributed.
+--------------------------------------------------------------------------------------------------
+3.Venues
+Purpose: To keep track of all venues where donations can be dropped off, collected, or distributed.
+Key Fields: Venue Name, Location (Geolocation), Capacity, venue name,status,dropoff point,Email,Contact phone.
+Relationships: Links with dropoff point.
+--------------------------------------------------------------------------------------------------
+4.Drop-Off Points
+Purpose: To document all authorized locations for drop-off, providing critical data for routing and pickup logistics.
+Key Fields: Drop-Off Point Name, Acceptable items,Cloth capacity,Location (Latitude and Longitude), Distance, food specific detail,cloth Specific detail,state,venue.
+Relationships: Connected to Venues, allowing easy assignment of volunteers for pickups.
+------------------------------------------------------------------------------------------------------
+5.Volunteers
+ Purpose: To store information on individuals who assist in distribution, pickups, and logistics.
+Key Fields: Volunteer Name, Contact Information, Assigned Drop-Off Points, Availability.
+Relationships: Linked to Drop-Off Points for scheduling, and Venues for distribution coordination.
+--------------------------------------------------------------------------------------------------
+6.Task
+ Purpose:The Task object in ShareNest helps manage and track the various tasks associated with the donation process.
+Key Fields: name,Date,Distance,Dropoff-point,foodcategory,Food Donation,rating,Task Id,Cloth Donation ,Venue.
+Relationships: Linked to Drop-Off Points for scheduling, and Venues for distribution coordination.
+-----------------------------------------------------------------------------------------------------

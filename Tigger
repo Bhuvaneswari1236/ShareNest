@@ -1,0 +1,26 @@
+To quickly create the DropOffTrigger trigger in the Developer Console, follow these steps:
+Log into your Trailhead account.
+Open Developer Console:
+Click on the gear icon in the top right corner.
+Select Developer Console to open a new console window.
+Create New Trigger:
+-------------------------------------------------------------------------------------------------
+//trigger DropOffTrigger on Drop_Off_Point__c (before insert) {
+
+    for (Drop_Off_Point__c drop : Trigger.new) {
+        // Assign the distance calculation to the Distance field
+        drop.Distance__c = drop.distance_calculation__c;
+        
+        // Additional logic based on Donation Type (assuming you have a field called Donation_Type__c)
+        if (drop.Donation_Type__c == 'Food') {
+            // Perform any specific actions for food donations
+            // e.g., Set a specific field or log information
+            drop.Food_Specific_Details_c__c = 'Some Value'; // Example
+        } else if (drop.Donation_Type__c == 'Clothing') {
+            // Perform any specific actions for clothing donations
+            drop.Clothing_Specific_Details__c = 'Some Value'; // Example
+        }
+    }
+
+}//
+---------------------------------------------------------------------------------------------------
